@@ -9,7 +9,8 @@
  */
 
 // CSS Reset
-@import "reset.less";
+// Drupal has reset already.
+//@import "reset.less";
 
 // Core variables and mixins
 @import "variables.less"; // Modify this for custom colors, font-sizes, etc
@@ -22,7 +23,10 @@
 
 // Base CSS
 @import "type.less";
-@import "code.less";
+
+// We use drupal build in code and pre styles.
+//@import "code.less";
+
 @import "forms.less";
 @import "tables.less";
 
@@ -54,7 +58,10 @@
 @import "thumbnails.less";
 @import "labels.less";
 @import "badges.less";
-@import "progress-bars.less";
+
+// We don't need progress bar styles, drupal has it's own.
+//@import "progress-bars.less";
+
 @import "accordion.less";
 @import "carousel.less";
 @import "hero-unit.less";
