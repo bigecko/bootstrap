@@ -72,7 +72,6 @@ select,
   line-height: @baseLineHeight;
   color: @gray;
   border: 1px solid @inputBorder;
-  .border-radius(3px);
 }
 .uneditable-textarea {
   width: auto;
@@ -366,7 +365,6 @@ select:focus:required:invalid {
   select,
   .uneditable-input {
     *margin-left: 0;
-    .border-radius(0 3px 3px 0);
     &:focus {
       position: relative;
       z-index: 2;
@@ -408,7 +406,6 @@ select:focus:required:invalid {
   input,
   select
   .uneditable-input {
-    .border-radius(3px 0 0 3px);
   }
   .uneditable-input {
     border-left-color: #eee;
