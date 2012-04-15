@@ -73,7 +73,6 @@ select,
   color: @gray;
   background-color: @inputBackground;
   border: 1px solid @inputBorder;
-  .border-radius(@inputBorderRadius);
 }
 .uneditable-textarea {
   width: auto;
@@ -384,8 +383,6 @@ select:focus:required:invalid {
     margin-bottom: 0; // prevent bottom margin from screwing up alignment in stacked forms
     *margin-left: 0;
     vertical-align: middle;
-    .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
-    // Make input on top when focused so blue border and shadow always show
     &:focus {
       z-index: 2;
     }
@@ -430,9 +427,6 @@ select:focus:required:invalid {
 .input-append {
   input,
   select,
-  .uneditable-input {
-    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
-  }
   .uneditable-input {
     border-right-color: #ccc;
     border-left-color: #eee;
